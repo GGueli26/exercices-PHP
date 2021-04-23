@@ -17,7 +17,7 @@
     echo "<p>A = $a</p>";
     echo "<p>B = $b</p>";
     echo "<p>C = $c</p>";
-
+    // créer variable pour swap $a $b $c 
     "<p>APRES PERMUTATION</p>";
     echo "<p>A = $b</p>";
     echo "<p>B = $c</p>";
@@ -34,7 +34,7 @@
     $Genre2 = "femme";
 
     echo "<p>$Nom a $Age ans, et c'est un $Genre</p>";
-    echo "<p>$Nom2 a $Age2 ans, et c'est un $Genre2</p>";
+    echo "<p>$Nom2 a $Age2 ans, et c'est une $Genre2</p>";
 ?>
 
 <?php
