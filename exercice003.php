@@ -46,7 +46,7 @@
             $nombre= rand(1,20);
             if($nombre<=15)
             echo '<p>Essai '.$essai.' : '.$n.' est trop petit (<16)</p>';
-        }while($n<=15);
+        }while($nombre<=15);
         echo "<p>Le nombre choisi est $nombre</p>";
     ?>
 
