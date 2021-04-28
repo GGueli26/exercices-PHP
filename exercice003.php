@@ -19,8 +19,8 @@
             {
                 echo '<tr>
                         <th>'.$nombre.'</th>
-                        <th>'.$nombre**'</th>
-                        <th>'.srqt($nombre).'</th>
+                        <th>'.$nombre*$nombre.'</th>
+                        <th>'.sqrt($nombre).'</th>
                     </tr>';
             }
 
@@ -45,7 +45,7 @@
             $essai ++;
             $nombre= rand(1,20);
             if($nombre<=15)
-            echo '<p>Essai '.$essai.' : '.$n.' est trop petit (<16)</p>';
+            echo '<p>Essai '.$essai.' : '.$nombre.' est trop petit (<16)</p>';
         }while($nombre<=15);
         echo "<p>Le nombre choisi est $nombre</p>";
     ?>
