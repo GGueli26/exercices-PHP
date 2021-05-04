@@ -79,10 +79,37 @@
         foreach($tableauM as $varTab){
             tableau($varTab);
         }
-
-
-
-
     ?>
+
+<?php
+ function moyenne($random){
+    $m=0;
+    $nombre=0;
+    foreach($random as $value){
+         $m+=$value;
+         $nombre++;
+        }
+        $m=$m/$nombre;
+        return $m;
+    }
+    foreach($tableauM as $value){
+        tableau($value);
+        $moyenne =0;
+        $nombre = 0;
+        $notes = [
+            '1' => rand(1,20),
+            '2' => rand(1,20),
+            '3' => rand(1,20),
+            '4' => rand(1,20)
+        ];
+        foreach ($notes as $key => $value){
+            echo "<p>Note: $key : $value </p>";
+            
+        } 
+        $moyenne = moyenne($notes);
+        echo "<p>La moyenne est de : $moyenne / 20</p>";
+    }
+    ?>
+
 </body>
 </html>
